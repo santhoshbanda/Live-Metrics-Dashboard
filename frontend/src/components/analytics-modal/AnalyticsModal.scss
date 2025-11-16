@@ -1,0 +1,15 @@
+.analytics-modal-holder {
+  .analytics-holder {
+    display: flex;
+    flex: 1;
+    border: 1px solid #AAA;
+    align-items: center;
+    justify-content: center;
+    .analytics-wrapper {
+      width: 80%;
+      min-width: 400px;
+      min-height: 300px;
+      height: 80%;
+    }
+  }
+}

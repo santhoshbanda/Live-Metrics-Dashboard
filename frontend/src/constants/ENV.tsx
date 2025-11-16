@@ -5,9 +5,9 @@ interface ENV {
 }
 
 const ENV: ENV = {
-    API_URL: import.meta.env.VITE_API_URL || 'http://localhost:3000',
-    APP_URL: import.meta.env.VITE_APP_URL || 'http://localhost:5173',
-    WEB_SOCKET_URL: import.meta.env.VITE_WEB_SOCKET_URL || 'http://localhost:3000',
+    API_URL: import.meta.env.VITE_API_URL,
+    APP_URL: import.meta.env.VITE_APP_URL,
+    WEB_SOCKET_URL: import.meta.env.VITE_WEB_SOCKET_URL,
 }
 
 console.log(ENV, 'ENV')

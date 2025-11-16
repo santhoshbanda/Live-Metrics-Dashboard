@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    environment:
+      VITE_API_URL: 'http://backend:3000'
+      VITE_APP_URL: 'http://localhost:8080'
+      VITE_WEB_SOCKET_URL: 'http://backend:3000'
+    depends_on:
+      - backend
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"

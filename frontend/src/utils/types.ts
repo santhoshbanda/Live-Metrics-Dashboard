@@ -13,5 +13,14 @@ export interface ServiceMetrics {
     memory: number,
     errorRate: number,
 }
+
+export interface ServiceAnalyticMetrics extends ServiceMetrics {
+    cpu: number,
+    memory: number,
+    errorRate: number,
+    time: string,
+}
+
+
 export type ServiceMetricsMap = {[key: string]: ServiceMetrics}
 

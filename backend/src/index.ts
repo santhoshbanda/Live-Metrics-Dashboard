@@ -5,6 +5,8 @@ import cors from 'cors';
 import serviceRoutes from './routes/service.routes';
 import {createServices, generateRandomMetrics} from './utils/common-functions'
 import {servicesList} from "./utils/data";
+import SSE from  'express-sse';
+const sse = new SSE([]);
 
 const app = express();
 const server = createServer(app);
@@ -22,6 +24,14 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/service', serviceRoutes);
+
+app.get('/metrics/stream', sse.init);
+setInterval(() => {
+    if (servicesList.length > 0) {
+        const serviceMetrics = generateRandomMetrics([servicesList[0]]);
+        sse.send(Object.values(serviceMetrics)[0]);
+    }
+}, 1000);
 
 app.get('/config', (req: Request, res: Response) => {
     return res.json(servicesList)

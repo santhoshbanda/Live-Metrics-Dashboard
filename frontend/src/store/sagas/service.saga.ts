@@ -35,11 +35,15 @@ const removeServicesAPICall = (serviceId:string) => {
 
 function* removeService(action: any) {
     try {
+        // @ts-ignore
         const resp = yield call(removeServicesAPICall, action.payload.serviceId);
         toast(resp.message, {type: 'success'})
     } catch (error) {
         console.error(error);
-        toast(error.data.message, {type: 'error'})
+        if(error) {
+            // @ts-ignore
+            toast(error.data.message, {type: 'error'})
+        }
     }
 }
 
