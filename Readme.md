@@ -18,8 +18,8 @@ Application is running on http://localhost:3000
 ### Frontend
 Application is running on http://localhost:8080
 
-
 ## Local Setup
+
 ### Prerequisites
 - Node v22
 - Yarn/NPM
