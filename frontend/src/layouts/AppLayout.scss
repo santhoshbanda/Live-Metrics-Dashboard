@@ -1,21 +1,29 @@
-import { Outlet } from "react-router-dom";
-import {ImageConfig} from "../constants";
+.app-layout-screen {
+  .app-header {
+    background: var(--primary);
+    height: 58px;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    .branding {
 
-const AppLayout = () => {
-    return (
-        <div className="app-layout-screen">
-            <>
-                <div className="app-header">
-                    <div className="branding">
-                        <img src={ImageConfig.reactLogo} alt={'logo'}/>
-                    </div>
-                </div>
-                <div className={'app-layout-content'}>
-                    <Outlet />
-                </div>
-            </>
-        </div>
-    )
+    }
+    .branding-text {
+      font-size: 16px;
+      font-weight: 600;
+      margin-left: 12px;
+    }
+    .app-header-info {
+      font-size: 14px;
+      background: var(--success);
+      border-radius: 10px;
+      padding: 4px 10px;
+      margin-left: 12px;
+      color: var(--successContrastText);
+    }
+  }
+  .app-layout-content {
+    margin-top: 60px;
+    background: var(--backgroundColor);
+  }
 }
-
-export default AppLayout;
