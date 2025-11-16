@@ -1,10 +1,13 @@
 # Live Metrics Dashboard
 
-- Step 1: Git clone https://github.com/santhoshbanda/Live-Metrics-Dashboard.git
+- Step 1: Git clone 
+```
+git clone https://github.com/santhoshbanda/Live-Metrics-Dashboard.git
+```
 
 - Step 2: Running aplication
 
-Running application in docker
+## Running application in docker
 ```
 make deploy
 ```
