@@ -1,8 +1,8 @@
 # Live Metrics Dashboard
 
-- Step 1: Git clone this repo
+- Step 1: Git clone https://github.com/santhoshbanda/Live-Metrics-Dashboard.git
 
-- Step 2: Run application
+- Step 2: Running aplication
 
 Running application in docker
 ```
@@ -26,7 +26,7 @@ Application is running on http://localhost:8080
 
 ### Frontend
 ```
-CD ./frontend
+cd ./frontend
 yarn install
 yarn dev
 ```
@@ -34,7 +34,7 @@ Frontend application will run on http://localhost:5173
 
 ### Backend
 ```
-CD ./backend
+cd ./backend
 yarn install
 yarn start
 ```
@@ -53,7 +53,7 @@ Backend application will run on http://localhost:3000
 - Redux (State Management)
 - Axios (API Requests)
 - SocketIO (Dashboard data)
-- Server Sent Events (SSE) streaming endpoint
+- Server Sent Events (SSE) stream for chart
 
 ## Frontend
 - Node.js
