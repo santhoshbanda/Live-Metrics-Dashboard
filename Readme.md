@@ -7,9 +7,9 @@
 git clone https://github.com/santhoshbanda/Live-Metrics-Dashboard.git
 ```
 
-- Step 2: Running aplication
+- Step 2: Running application
 
-## Running application in docker
+## Running application in Docker
 ```
 make deploy
 ```
@@ -58,13 +58,13 @@ Backend application will run on http://localhost:3000
 - Redux (State Management)
 - Axios (API Requests)
 - SocketIO (Dashboard data)
-- Server Sent Events (SSE) stream for chart
+- Server-Sent Events (SSE) stream for chart
 
 ## Frontend
 - Node.js
 - ExpressJS
 - SocketIO
-- Server Sent Events (express-sse) streaming endpoint
+- Server-Sent Events (express-sse) streaming endpoint
 
 ## System architecture
 ```
@@ -91,12 +91,12 @@ ReactJS(Vite)                                       NodeJS(Express)
 
 ```
 
-# Performance optimization decisions
+# Performance optimisation decisions
 
 ## Frontend
-- Used memoization (useMemo, useCallback) to optimize render cycles
-- SSE (EventSource) is used only when service view (analytic window) is open to reduce unnecessary network connections
-- WebSocket connection is only active on dashboard page. connection closed/open when analytics open/closed to prevent service metrics updating in background
+- Used memoization (useMemo, useCallback) to optimise render cycles
+- SSE (EventSource) is used only when the service view (analytic window) is open to reduce unnecessary network connections
+- WebSocket connection is only active on the dashboard page. connection closed/open when analytics open/closed to prevent service metrics updating in the background
 
 ## Backend
-- WebSocket metric messages only sent when client connects, stops when client disconnect
+- WebSocket metric messages are only sent when the client connects, and stop when the client disconnects
