@@ -1,4 +1,4 @@
-# This is Part of the Technical Assessment for a Company. Built without using AI tools - Used Google & Stackoverflow like old school
+# This is part of the technical assessment for a company. Built without using AI tools—just Google and Stack Overflow, old-school style.
 
 # Live Metrics Dashboard
 
