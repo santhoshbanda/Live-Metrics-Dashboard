@@ -1,3 +1,5 @@
+# This is Part of the Technical Assessment for a Company. Built without using AI tools - Used Google & Stackoverflow like old school
+
 # Live Metrics Dashboard
 
 - Step 1: Git clone 
